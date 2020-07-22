@@ -1,2 +1,1 @@
-# pelican
-
+# Gitlab CI & CD

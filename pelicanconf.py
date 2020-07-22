@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Benoit Petit'
-SITENAME = 'Projet04 Benoit Petit'
-SITEURL = ''
+SITENAME = 'Example Pelican website !'
+SITEURL = 'https://benoitpetit.github.io'
 
 PATH = 'content'
 OUTPUT_PATH = 'output'
@@ -30,7 +30,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

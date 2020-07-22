@@ -103,8 +103,7 @@ def publish(c):
     c.run('pelican -s {settings_publish}'.format(**CONFIG))
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        '-e "ssh -p {ssh_port}" '
-        '{} {ssh_user}@{ssh_host}:{ssh_path}'.format(
+        '{} {production}:{dest_path}'.format(
             CONFIG['deploy_path'].rstrip('/') + '/',
             **CONFIG))
 
