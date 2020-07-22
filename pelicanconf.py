@@ -7,6 +7,7 @@ SITENAME = 'Projet04 Benoit Petit'
 SITEURL = ''
 
 PATH = 'content'
+OUTPUT_PATH = 'output'
 
 TIMEZONE = 'Europe/Paris'
 
