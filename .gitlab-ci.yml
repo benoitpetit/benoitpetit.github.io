@@ -9,11 +9,11 @@ build_job:
   tags:
     - docker
   script:
-  - pelican -s publishconf.py
+    - pelican -s pelicanconf.py
   artifacts:
     paths:
-    - output/
-    
+      - output/
+      
 publish_job:
   stage: publish
   tags:
