@@ -1,0 +1,24 @@
+image: apihackers/pelican:latest
+
+stages:
+  - build
+  - publish
+  
+build_job:
+  stage: build
+  tags:
+    - docker
+  script:
+    - pelican -s pelicanconf.py
+  artifacts:
+    paths:
+      - output/
+      
+publish_job:
+  stage: publish
+  tags:
+    - docker
+  script:
+    - apk add make git git-fast-import
+    - pip3 install ghp-import
+    - make github
