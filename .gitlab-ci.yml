@@ -4,7 +4,7 @@ stages:
   - build
   - publish
   
-build_job:
+build:
   stage: build
   tags:
     - docker
@@ -14,7 +14,7 @@ build_job:
     paths:
       - output/
       
-publish_job:
+publish:
   stage: publish
   tags:
     - docker
